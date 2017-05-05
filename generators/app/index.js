@@ -21,6 +21,9 @@ const jhipsterFunc = {};
 
 
 module.exports = generator.extend({
+    // dummy test
+    _sayFoo: () => 'foo',
+
     /**
      * replace Spring naming strategies with more neutral ones
      * return true if all occurrences are replaced
