@@ -23,3 +23,6 @@ env:
     - JHIPSTER_SCRIPTS=$JHIPSTER_TRAVIS/scripts
 install:
     - $JHIPSTER_INSTALL/install-jhipster-stack.sh
+notifications:
+# We will invert both when we'll have a smooth running build
+    email: false
