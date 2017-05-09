@@ -1,4 +1,6 @@
 #!/bin/bash
-yarn link
+set -ev
 yarn install
-yarn test
+# This doubles `npm test` so I'm removing it for the moment.
+# yarn test
+yarn link

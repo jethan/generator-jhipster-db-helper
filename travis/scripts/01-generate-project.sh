@@ -1,16 +1,16 @@
 #!/bin/bash
 set -ev
-#-------------------------------------------------------------------------------
-# Force no insight
-#-------------------------------------------------------------------------------
-mkdir -p "$HOME"/.config/configstore/
-mv "$JHIPSTER_TRAVIS"/configstore/*.json "$HOME"/.config/configstore/
 
 #-------------------------------------------------------------------------------
 # Generate the project with yo jhipster
 #-------------------------------------------------------------------------------
-mkdir -p "$HOME"/app
-mv -f "$JHIPSTER_SAMPLES"/"$JHIPSTER"/.yo-rc.json "$HOME"/app/
-cd "$HOME"/app
-yo jhipster --force --no-insight
-ls -al "$HOME"/app
+# TODO all arbitrary values should come from build env
+
+mkdir minimalist-app
+cd minimalist-app
+cp "$JHIPSTER_SAMPLES/minimalist-app/.yo-rc.json" .
+
+yarn link generator-jhipster-db-helper
+yo jhipster
+yo jhipster-db-helper
+mvn test
