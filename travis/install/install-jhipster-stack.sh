@@ -14,8 +14,9 @@ set -ev
 #-------------------------------------------------------------------------------
 # Install the latest version of JHipster
 #-------------------------------------------------------------------------------
-cd "$TRAVIS_BUILD_DIR"/
+#cd "$TRAVIS_BUILD_DIR"/
 #yarn install
+echo -e "$JHIPSTER_TRAVIS \n $JHIPSTER_INSTALL \n $JHIPSTER_SAMPLES \n $JHIPSTER_SCRIPTS"
 yarn link
 echo "$(pwd) contains the application"
 ls
