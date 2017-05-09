@@ -17,3 +17,5 @@ set -ev
 cd "$TRAVIS_BUILD_DIR"/
 #yarn install
 yarn link
+echo "$(pwd) contains the application"
+ls
