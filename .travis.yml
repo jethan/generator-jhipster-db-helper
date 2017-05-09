@@ -16,6 +16,7 @@ cache:
     - $HOME/app/node_modules
     - $HOME/app/node
 env:
+    global:
     - JHIPSTER_TRAVIS=$TRAVIS_BUILD_DIR/travis
     - JHIPSTER_INSTALL=$JHIPSTER_TRAVIS/install
     - JHIPSTER_SAMPLES=$JHIPSTER_TRAVIS/samples
