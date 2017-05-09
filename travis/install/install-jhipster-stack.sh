@@ -3,18 +3,17 @@ set -ev
 #-------------------------------------------------------------------------------
 # Update npm
 #-------------------------------------------------------------------------------
-npm install -g npm
+#npm install -g npm
 #-------------------------------------------------------------------------------
 # Install yeoman, bower and gulp
 #-------------------------------------------------------------------------------
-npm install -g yo
-npm install -g bower
-npm install -g gulp-cli
-npm install -g generator-jhipster
+#yarn global install yo
+#yarn global install bower
+#yarn global install gulp-cli
+#yarn global install generator-jhipster
 #-------------------------------------------------------------------------------
 # Install the latest version of JHipster
 #-------------------------------------------------------------------------------
 cd "$TRAVIS_BUILD_DIR"/
-npm install
-yarn install
-npm link
+#yarn install
+yarn link
