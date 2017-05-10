@@ -1,10 +1,13 @@
 #!/bin/bash
 set -ev
 #-------------------------------------------------------------------------------
-# Installing JHipster stack
+# Check all versions
 #-------------------------------------------------------------------------------
-yarn global add yo
-yarn global add bower
-yarn global add gulp-cli
-yarn global add generator-jhipster
-yarn global upgrade generator-jhipster
+node -v
+java -version
+yarn --version
+npm -v
+git --version
+bower -v
+yo --version
+gulp -v
