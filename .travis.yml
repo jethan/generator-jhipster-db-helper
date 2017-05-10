@@ -17,7 +17,8 @@ env:
     - JHIPSTER_SAMPLES=$JHIPSTER_TRAVIS/samples
     - JHIPSTER_SCRIPTS=$JHIPSTER_TRAVIS/scripts
 install:
-    - $JHIPSTER_INSTALL/01-install-module.sh
+    - $JHIPSTER_INSTALL/01-install-jhipster-stack.sh
+    - $JHIPSTER_INSTALL/02-install-module.sh
 script:
     - $JHIPSTER_SCRIPTS/01-generate-project.sh
 notifications:
